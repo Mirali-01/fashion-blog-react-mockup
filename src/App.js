@@ -7,12 +7,15 @@ import Footer from "./components/Footer";
 import articleInfo from "./models/articleInfo";
 
 function App() {
+  const articles = articleInfo.map((articles) => {
+    return <Article articles={articles} />;
+  });
+
   return (
     <div className="App">
       <Header />
       <Nav />
-      <Article />
-      {/* <Article /> */}
+      <div className="articleBox"> {articles} </div>
       <Footer />
     </div>
   );
