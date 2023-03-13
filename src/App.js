@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import Header from "./components/Header";
 import Article from "./components/Article";
 import Footer from "./components/Footer";
+import articleInfo from "./models/articleInfo";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Header />
       <Nav />
       <Article />
-      <Article />
+      {/* <Article /> */}
       <Footer />
     </div>
   );
